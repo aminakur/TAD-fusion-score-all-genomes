@@ -1,3 +1,6 @@
+### NEW
+Added -chr option to calculating TAD-fusion score. Now you can use it with any genome you like! Just specify the number of chromosomes with the new option.
+
 ### What is TAD-fusion score?
 TAD-fusion score is a score to quantify deletions based on their potential disruption of the 3D genome structure. More specifically, TAD-fusion score is defined as the expected number of additional genomic interactions created as a result of the deletion.
 
@@ -24,7 +27,9 @@ TAD-fusion score is a score to quantify deletions based on their potential disru
        -w        The window length (a number of bins) around the deletion to calculate the TAD-fusion score
        -d        The delta value threshold to consider if a bin pair is interacted or not.
        -o        The output file, the file format has four columns where the last one is the TAD-fusion score  
-
+     NEW IN THIS FORK
+       -chr      The maximum number of chromosomes in the model directory. The default number is 23.
+   
 ##### Option 2: From a new Hi-C dataset
 
 1. Fit the model with Hi-C data
