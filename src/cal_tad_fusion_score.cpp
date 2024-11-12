@@ -89,6 +89,7 @@ int main (int argc, char** argv) {
   int debug = 0, window_size, permutation_num = 0;
   double delta;
 
+  
   // Parse the parameters
   if (argc % 2 == 0) {
     cout << "ERROR: Number of parameters must be even" << endl;
@@ -96,7 +97,6 @@ int main (int argc, char** argv) {
   }
   for (int i = 1; i < argc; i = i + 2) {
     string option(argv[i]);
-    //cout << option << "\t" << argv[i+1] << endl;
     if (option.compare("-f") == STR_EQ)
       del_filename = argv[i+1];
     else if (option.compare("-md") == STR_EQ)
@@ -109,8 +109,9 @@ int main (int argc, char** argv) {
       min_del_length = atoi(argv[i+1]);
     else if (option.compare("-mxl") == STR_EQ)
       max_del_length = atof(argv[i+1]);
-    else if (option.compare("-chr") == STR_EQ)
-      chr_min = chr_max = atoi(argv[i+1]);
+    else if (option.compare("-chr") == STR_EQ) {
+      chr_max = atoi(argv[i+1]);  // Only set chr_max, keeping chr_min at 1
+    }
     else if (option.compare("-per") == STR_EQ)
       permutation_num = atoi(argv[i+1]);
     else if (option.compare("-debug") == STR_EQ)
