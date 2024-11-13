@@ -1,5 +1,5 @@
 ### NEW
-Added -chr option to calculating TAD-fusion score. Now you can use it with any genome you like! Just specify the number of chromosomes with the new option.
+Added -chr option for calculating TAD-fusion score. Now you can use it with any genome you like! Just specify the number of chromosomes with the new option.
 
 ### What is TAD-fusion score?
 TAD-fusion score is a score to quantify deletions based on their potential disruption of the 3D genome structure. More specifically, TAD-fusion score is defined as the expected number of additional genomic interactions created as a result of the deletion.
