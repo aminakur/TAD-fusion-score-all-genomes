@@ -1,4 +1,4 @@
-### NEW
+### NEW in this forked repo
 Added -chr option for calculating TAD-fusion score. Now you can use it with any genome you like! Just specify the number of chromosomes with the new option.
 
 ### What is TAD-fusion score?
